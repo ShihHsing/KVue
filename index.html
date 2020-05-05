@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myKVue</title>
+</head>
+
+<body>
+    <script src="./KVue.js"></script>
+    <script>
+        const app = new KVue({
+            data: {
+                test: "I am test",
+                foo: {
+                    bar: 'bar'
+                }
+            }
+        })
+
+        app.$data.test = "hello, Drama!";
+        app.$data.foo.bar = 'oh my bar';
+    </script>
+</body>
+
+</html>
